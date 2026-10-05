@@ -79,7 +79,7 @@ function removeColumn() {
 
 function enableDisable() {
   const rowCount = document.querySelectorAll('tr').length;
-  const columnCount = document.querySelector('tr').children.length;
+  const columnCount = document.querySelector('tbody tr').children.length;
 
   buttonAppRow.disabled = rowCount === maxCount;
   buttonRemRow.disabled = rowCount === minCount;
