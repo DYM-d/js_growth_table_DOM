@@ -51,7 +51,7 @@ function removeRow() {
   if (!buttonRemRow.disabled) {
     const table = document.querySelector('tbody');
 
-    table.children[0].remove();
+    table.lastElementChild.remove();
   }
 }
 
@@ -72,7 +72,7 @@ function removeColumn() {
     const tr = document.querySelectorAll('tr');
 
     for (const elem of tr) {
-      elem.children[0].remove();
+      elem.lastElementChild.remove();
     }
   }
 }
